@@ -55,4 +55,4 @@ Website ini dikembangkan sebagai bagian dari skripsi dengan tujuan mempromosikan
 
 1. Clone repository:
    ```bash
-   git clone https://github.com/Habibiqbal20/project.git
+   git clone https://github.com/Habibiqbal20/Project.git
