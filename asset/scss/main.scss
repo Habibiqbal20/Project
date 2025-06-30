@@ -11,7 +11,9 @@ $webkit : -webkit-fill-available;
     margin: 0;
     padding: 0;
 }
-
+html{
+    overflow-x: hidden;
+}
 body {
     background-color: #fff;
     overflow-x: hidden;
@@ -980,15 +982,23 @@ section {
     background-color: rgb(27, 27, 27);
     color: #4b4c4d;
     padding: 50px 50px 30px 50px;
+    font-family: Arial, Helvetica, sans-serif;
 
     footer {
         .footer-container {
+            .heading {
+                display: flex;
+                justify-content: center;
+                color: white;
+                margin-bottom: 20px;
+            }
             .footer-class {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
 
-                .about {
+                .aboutFooter {
+                    margin-bottom: 30px;
                     h3 {
                         color: white;
                         margin-bottom: 15px;
@@ -1008,6 +1018,11 @@ section {
                             }
                         }
                     }
+                }
+                @media (max-width: 600px) {
+                & {
+                    flex-direction: column;
+                }
                 }
             }
         }
@@ -1147,15 +1162,15 @@ section {
 
     .main-content {
         margin-left: 250px;
-        margin-right: 20px;
+        margin-top: 20px;
         padding: 20px;
         width: 100%;
         transition: margin-left 0.3s ease;
 
         @media (max-width: 900px) {
             & {
-                margin-left: 0;
-                width: 95%;
+                margin: auto;
+                width: 90%;
             }
         }
 
@@ -1487,9 +1502,9 @@ section {
             .pagination {
                 margin-top: 20px;
                 a {
-                    margin-right:5px;
-                    padding:5px 10px;
-                    border:1px solid #ccc;
+                    margin-right: 5px;
+                    padding: 5px 10px;
+                    border: 1px solid #ccc;
                     text-decoration: none;
                 }
             }
@@ -2745,6 +2760,7 @@ section {
                     }
                 }
             }
+
             .users-comment-column {
                 padding: 20px;
                 margin: 15px 15px 30px 15px;
@@ -2885,6 +2901,7 @@ section {
                     }
                 }
             }
+
             .komentar-kosong {
                 text-align: center;
                 padding: 40px 20px;
@@ -2895,51 +2912,51 @@ section {
                 max-width: 600px;
                 margin: 30px auto;
                 animation: fadeIn 0.5s ease-in-out;
-              
+
                 .ikon-kosong {
-                  width: 120px;
-                  opacity: 0.7;
-                  margin-bottom: 20px;
+                    width: 120px;
+                    opacity: 0.7;
+                    margin-bottom: 20px;
                 }
-              
+
                 h4 {
-                  font-size: 1.5em;
-                  margin-bottom: 10px;
-                  color: #555;
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                    color: #555;
                 }
-              
+
                 p {
-                  color: #777;
-                  margin-bottom: 20px;
+                    color: #777;
+                    margin-bottom: 20px;
                 }
-              
+
                 .tombol-komentar {
-                  background-color: $main-color;
-                  color: white;
-                  padding: 10px 25px;
-                  border-radius: 25px;
-                  text-decoration: none;
-                  font-weight: bold;
-                  transition: background 0.3s;
-              
-                  &:hover {
-                    background-color: $secondary-color;
-                  }
+                    background-color: $main-color;
+                    color: white;
+                    padding: 10px 25px;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: background 0.3s;
+
+                    &:hover {
+                        background-color: $secondary-color;
+                    }
                 }
-              }
-              
-              @keyframes fadeIn {
+            }
+
+            @keyframes fadeIn {
                 from {
-                  opacity: 0;
-                  transform: translateY(10px);
+                    opacity: 0;
+                    transform: translateY(10px);
                 }
-              
+
                 to {
-                  opacity: 1;
-                  transform: translateY(0);
+                    opacity: 1;
+                    transform: translateY(0);
                 }
-              }
-              
+            }
+
         }
     }
 }

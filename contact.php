@@ -17,6 +17,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="icon" href="asset/images/LOGO.jpg">
     <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <title>Contact</title>
 </head>
@@ -63,7 +64,7 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="contact">
             <div class="contact-img">
-                <img src="asset/images/product/_MG_6716.JPG" alt="Image 3">
+                <img src="asset/images/homepage/_MG_6716.JPG" alt="Image 3">
             </div>
         </div>
     </section>

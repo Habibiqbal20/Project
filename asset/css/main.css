@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #fff;
   overflow-x: hidden;
@@ -781,25 +785,40 @@ section .ulasan_pembeli .container .box .user .information .date p {
   background-color: rgb(27, 27, 27);
   color: #4b4c4d;
   padding: 50px 50px 30px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-basic footer .footer-container .heading {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 20px;
 }
 .footer-basic footer .footer-container .footer-class {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.footer-basic footer .footer-container .footer-class .about h3 {
+.footer-basic footer .footer-container .footer-class .aboutFooter {
+  margin-bottom: 30px;
+}
+.footer-basic footer .footer-container .footer-class .aboutFooter h3 {
   color: white;
   margin-bottom: 15px;
 }
-.footer-basic footer .footer-container .footer-class .about ul li {
+.footer-basic footer .footer-container .footer-class .aboutFooter ul li {
   list-style: none;
 }
-.footer-basic footer .footer-container .footer-class .about ul li a {
+.footer-basic footer .footer-container .footer-class .aboutFooter ul li a {
   text-decoration: none;
   color: #4b4c4d;
 }
-.footer-basic footer .footer-container .footer-class .about ul li :hover {
+.footer-basic footer .footer-container .footer-class .aboutFooter ul li :hover {
   color: #7a7c7e;
+}
+@media (max-width: 600px) {
+  .footer-basic footer .footer-container .footer-class {
+    flex-direction: column;
+  }
 }
 .footer-basic footer .copyright {
   display: flex;
@@ -913,15 +932,15 @@ section .ulasan_pembeli .container .box .user .information .date p {
 }
 .dashboard .main-content {
   margin-left: 250px;
-  margin-right: 20px;
+  margin-top: 20px;
   padding: 20px;
   width: 100%;
   transition: margin-left 0.3s ease;
 }
 @media (max-width: 900px) {
   .dashboard .main-content {
-    margin-left: 0;
-    width: 95%;
+    margin: auto;
+    width: 90%;
   }
 }
 .dashboard .main-content .navbar {

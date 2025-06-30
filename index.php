@@ -42,6 +42,7 @@ if (isset($_POST["submit"])) {
     <link rel="stylesheet" href="asset/css/main.css">
     <link rel="stylesheet" href="asset/fontawesome-free-6.2.1/css/all.css">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="icon" href="asset/images/LOGO.jpg">
     <title>Tesya Lobster Farm</title>
 </head>
 

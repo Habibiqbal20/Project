@@ -1,14 +1,16 @@
 <?php
+include 'data/function.php';
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="about">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/main.css">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="icon" href="asset/images/LOGO.jpg">
     <title>About Us</title>
 </head>
 
@@ -32,7 +34,7 @@ session_start();
                     ?>
                         <li><button id="logout">Logout</button></li>
                     <?php
-                    }elseif ($_SESSION['ADMIN'] === true) {
+                    }if ($_SESSION['ADMIN'] === true) {
                     ?>
                         <li><a href="dashboard.php">Dashboard</a></li>
                         <li><button id="logout">Logout</button></li>
@@ -59,7 +61,7 @@ session_start();
         </div>
         <div class="about-us">
             <div class="about-us-img">
-                <img src="asset/images/product/_MG_6716.JPG" alt="Image 3">
+                <img src="asset/images/homepage/_MG_6716.JPG" alt="Image 3">
             </div>
         </div>
     </section>
