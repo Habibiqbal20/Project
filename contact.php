@@ -123,7 +123,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="alamat">
                             <a href="https://maps.app.goo.gl/zVocLfWkD5NjDWAy6" target="_blank">
-                                <img src="asset/images/—Pngtree—colored location line vector single_5099910.png" alt="">
+                                <img src="asset/images/pin_point.png" alt="LOKASI">
                                 <p>Kuta Pinang, Tebing Syahbandar (Klik Untuk Melihat Lokasi)</p>
                             </a>
                         </div>
