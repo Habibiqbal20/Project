@@ -25,7 +25,7 @@ while ($data = $sql->fetch_assoc()) {
 $sql = "DELETE FROM foto_produk WHERE uniq_code = '$uniqCode'";
 if ($conn->query($sql) === TRUE ){
     echo "<script>
-        alert('Produk berhasil dihapus')
+        
         location.replace (\"dashboard.php \")
     </script>";
 } else {
